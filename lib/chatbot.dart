@@ -3,10 +3,10 @@ import 'package:flutter_dialogflow/dialogflow_v2.dart';
 
 class Chatbot extends StatefulWidget {
   @override
-  _HomePageDialogflowV2 createState() => _HomePageDialogflowV2();
+  _ChatBotState createState() => _ChatBotState();
 }
 
-class _HomePageDialogflowV2 extends State<Chatbot> {
+class _ChatBotState extends State<Chatbot> {
   final List<Message> _messages = <Message>[];
   final TextEditingController _textController = TextEditingController();
 
@@ -155,7 +155,7 @@ class Message extends StatelessWidget {
       ),
     ];
   }
-  
+
 
   @override
   Widget build(BuildContext context) {
